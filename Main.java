@@ -57,6 +57,12 @@ class Main {
     System.out.println(alphanumeric.replaceAll("(?i)[a-c]", "*"));
 
     System.out.println("-".repeat(40));
+     //Repalce all digits in alphanumeric with '*' using \\d
+    System.out.println("Replacing all digits in "+alphanumeric);
+    System.out.println(alphanumeric.replaceAll("\\d","*"));
+    //replace all non Digits
+    System.out.println("Replacing all non-digits in "+alphanumeric);
+    System.out.println(alphanumeric.replaceAll("\\D","*"));
 
   }
 }
