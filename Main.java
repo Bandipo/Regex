@@ -26,7 +26,37 @@ class Main {
     System.out.println(string.matches("I am"));
 
     // Using Square bracket
+     System.out.println("-".repeat(40));
+    System.out.println(newString1);
+// all occurences of 'a' is replaced with '*'
+    System.out.println(newString1.replaceAll("[a]","*"));
+    // all occurences of 'a' followed by 'r' . dont add space between [a] and [r]
+    System.out.println(newString1.replaceAll("[a][r]", "*"));
 
+    // more on boundary replacement
+    // replace a word whether is starts with Upper or Lower case
+
+    String sentence = "We are Decadevs";
+    System.out.println(sentence.replaceAll("[Dd]ecadevs", "decadevs"));
+
+    //
+
+    //replace every occurences of 'e' in the string with '*'
+    System.out.println(sentence.replaceAll("[e]", "*"));
+    // Making your own character classes
+
+    String alphanumeric = "abcdefg123456ABCDEFG8910";
+    System.out.println(alphanumeric);
+    System.out.println(alphanumeric.replaceAll("[abcABC123]","*"));
+    // or you could do
+
+    System.out.println(alphanumeric.replaceAll("[a-cA-B1-3]", "+"));
+
+    // do the samething for a-c and 1-3, only ignore case
+
+    System.out.println(alphanumeric.replaceAll("(?i)[a-c]", "*"));
+
+    System.out.println("-".repeat(40));
 
   }
 }
