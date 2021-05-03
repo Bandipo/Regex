@@ -67,7 +67,8 @@ class Main {
     String whiteSpace = "I \t love \tjava";
     System.out.println(whiteSpace);
    
-    System.out.println(whiteSpace.replaceAll("\\s",""));
+    System.out.println("Replacing All Space with '-' ");
+    System.out.println(whiteSpace.replaceAll("\\s","-"));
 
     System.out.println("replacing All none White space");
 
