@@ -17,7 +17,7 @@ class Main {
     System.out.println("Using the Caret");
     System.out.println(string.replaceAll("^I am", " You are "));
     // to match from beginnning to the end use Caret and Dollar sign '$''
-
+    System.out.println("*".repeat(50));
     System.out.println(string.replaceAll("^I am$", "You are"));
 
     // use String.matches(regex) to check if the String contains a regex
